@@ -4,13 +4,13 @@
 sudo apt-get update && sudo apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod jq
 
 root=`pwd`
-mkdir ds918-7.0.1
+mkdir ds918-7.1.0
 mkdir output
-cd ds918-7.0.1
+cd ds918-7.1.0
 
 # download redpill
 git clone --depth=1 https://github.com/RedPill-TTG/redpill-lkm.git
-git clone -b --depth=1 https://github.com/pocopico/redpill-load.git
+git clone --depth=1 https://github.com/pocopico/redpill-load.git
 
 # download syno toolkit
 curl --location "https://sourceforge.net/projects/dsgpl/files/toolkit/DSM7.0/ds.apollolake-7.0.dev.txz/download" --output ds.apollolake-7.0.dev.txz
